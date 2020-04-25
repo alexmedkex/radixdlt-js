@@ -1,12 +1,15 @@
 language: node_js
 node_js: node
+dist: trusty
 
 services:
   - docker
 
 addons:
   sonarcloud:
-    organization: "radixdlt-github"
+    organization: "alexmedkex"
+    token:
+      secure: "FmzFHrorFNes8kcReWISxzK1AsKnGjPVQW9RJBMyLxiHJcPpDkqLdaEe0XkTsREJjxNeblG4+PIA7ROffruizAEKpFl5Sck/vuTeY9aLV0o6gzIxiWPUVJ7WKMwa9tPOszSYcg6hPEW2iXF+XOVny+MkqkldDUDckVZ61Neo1SUG9WswnIoUH8xwU32hVpT5SxTbbcAHZkv+QhGUCl1l2S+Sx4itkYftnZS9OzEu2ZStiLHffF5e+jGpyyD/h+iy0zotZSHaKtRnItyjeAg/AQIEqeP0kWiVt0adFFtUlxD2tOIhl40o2K8qV9f6QGdxp7eTDJVp0ZctOWwukLXxTw/eVmSYhjBGWuizbTy2l8Xbkw1FGKmADJ8XIypKAsQT2OwJrPkzj5uSgMR2A7a4GohgmTj7oUmlVY4QRewcbCASAspHvYiNpOYh+F2cU3+Nta+BaQ1njoB1rGY/K/3qLUXLPJWIDU2F36rFyT4ays1CQXkkJfuuGkCzBoniD6pPVRU7BN1QgOGb0/dCh2QCZwtVNU8y779SkArKbdH5pmRXiZ9vJm2/DPGMwmG6xdQK3NXyzC5Gf0SDJcL6nDvwxVmnQfRWcpEX01nLkuMFo4HfEJ+dIYSlQDq2mn/8xJ+DuQvoVjyTroRoqfHbneGuxm2sDxwmoBXR+wXP47647Xw="
 
 before_install:
   # Run
